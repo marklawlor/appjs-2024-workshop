@@ -9,8 +9,8 @@ export default function Layout() {
       <Navigator router={TabRouter}>
         <Tabs>
           <Tabs.Screen name="index" icon="home" href="/" />
-          <Tabs.Screen name="[mediaType]/index" icon="movie" href="/movie" />
-          <Tabs.Screen name="[mediaType]/index" icon="tv" href="/tv" />
+          <Tabs.Screen name="[mediaType]" icon="movie" href="/movie" />
+          <Tabs.Screen name="[mediaType]" icon="tv" href="/tv" />
         </Tabs>
       </Navigator>
     </View>
