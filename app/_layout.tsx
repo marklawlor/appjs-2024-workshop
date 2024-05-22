@@ -1,17 +1,12 @@
-import { Stack } from "expo-router";
-import { View } from "react-native";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { StyleSheet } from "react-native";
-import "@/lib/nativewind";
+import { useEffect } from 'react';
+import { Text } from 'react-native';
+import { Slot, Redirect } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
+import { AuthProvider, useAuth } from '@/lib/auth'
 
-const queryClient = new QueryClient();
+SplashScreen.preventAutoHideAsync();
 
-export default function AppLayout() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <View style={StyleSheet.absoluteFill}>
-        <Stack screenOptions={{ title: "" }} />
-      </View>
-    </QueryClientProvider>
-  );
+// TODO: Auth & Redirect
+export default function App() {
+  return <Slot />;
 }
