@@ -10,9 +10,7 @@ export default function AppLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <View style={StyleSheet.absoluteFill}>
-        <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="index" options={{ title: "Home" }} />
-        </Stack>
+        <Stack screenOptions={{ title: "" }} />
       </View>
     </QueryClientProvider>
   );
