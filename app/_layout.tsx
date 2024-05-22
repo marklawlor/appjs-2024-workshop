@@ -4,8 +4,6 @@ import { Slot, Redirect } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { AuthProvider, useAuth } from '@/lib/auth'
 
-SplashScreen.preventAutoHideAsync();
-
 // TODO: Auth & Redirect
 export default function App() {
   return <Slot />;

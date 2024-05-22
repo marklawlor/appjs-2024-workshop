@@ -12,10 +12,6 @@ export default function AppLayout() {
       <View style={StyleSheet.absoluteFill}>
         <Stack screenOptions={{ title: "" }}>
           <Stack.Screen name="index" />
-          <Stack.Screen
-            name="sign-in"
-            screenOptions={{ presentation: 'modal' }}
-          />
         </Stack>
       </View>
     </QueryClientProvider>
