@@ -14,12 +14,7 @@ export function SignIn() {
     try {
       setError("");
       setSubmitting(true);
-      // const success = await signIn(email, password);
-      const success = await new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(true);
-        }, 3000);
-      });
+      const success = await signIn(email, password);
       setSubmitting(false);
 
       if (!success) {
