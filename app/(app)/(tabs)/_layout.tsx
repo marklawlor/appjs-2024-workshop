@@ -11,6 +11,7 @@ export default function Layout() {
           <Tabs.Screen name="index" icon="home" href="/" />
           <Tabs.Screen name="[mediaType]" icon="movie" href="/movie" />
           <Tabs.Screen name="[mediaType]" icon="tv" href="/tv" />
+          <Tabs.Screen name="search" icon="search" href="/search" />
         </Tabs>
       </Navigator>
     </View>
