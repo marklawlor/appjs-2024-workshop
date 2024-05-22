@@ -1,8 +1,8 @@
-import { useLocalSearchParams, Navigator } from "expo-router";
+import { MediaPhotos } from "@/lib/components/MediaPhotos";
 import { useMedia } from "@/lib/hooks/useMedia";
-import { MediaDetail } from "@/lib/components/MediaDetail";
+import { useLocalSearchParams } from "expo-router";
 
-export default function Detail() {
+export default function Photos() {
   const { mediaType, id } = useLocalSearchParams();
   if (typeof id !== "string") {
     return null;
@@ -11,5 +11,5 @@ export default function Detail() {
   }
 
   const media = useMedia({ id, mediaType });
-  return <MediaDetail media={media} />;
+  return <MediaPhotos media={media} />;
 }
